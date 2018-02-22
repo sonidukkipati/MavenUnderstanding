@@ -7,6 +7,22 @@
     <groupId>com.qaauber</groupId>
     <artifactId>MavenUnderstanding</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>
+                    org.codehaus.mojo
+                </groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>Report.AddReport</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
 
         <dependency>
